@@ -120,7 +120,7 @@ resource "aws_security_group" "database" {
 # upload terraform key pair for instance provision
 resource "aws_key_pair" "deployer" {
   key_name   = "codio-deployer-key"
-  public_key = "${file("C:\\Users\\agustin.gallegos\\.ssh\\id_rsa.pub")}"
+  public_key = "${file("path\\id_rsa.pub")}"
 }
 
 # Get user_data for instance provision
